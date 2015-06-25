@@ -1,0 +1,16 @@
+<!-- Project Level Wrapper & Navigation ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  ~ ~ ~  -->
+<section id="Portfolio">
+	<section id="Project_Wrapper">
+	</section>
+
+	<ul class="list-of-projects">
+		<% _.each(projects, function(project, i) { var col = ((i % 3) + 1); %>
+			<li 
+				class="project <%= 'col_' + col %>" 
+				data-idx="<%=i%>" 
+				style="background-image: url(' <%= project.preview_image %> ')">
+				<a href="#/Portfolio/<%= project.title.replace(/ /g, '-') %>"></a>
+			</li>
+		<%})%>
+	</ul>
+</section>

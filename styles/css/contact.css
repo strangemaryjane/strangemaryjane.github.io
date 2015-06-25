@@ -1,0 +1,32 @@
+#Contact {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  #Contact .wrapper.sub-section {
+    max-width: 70%;
+    padding: 0px 0px 0px 34px; }
+    #Contact .wrapper.sub-section #BaseContact {
+      padding: 245px 10px 10px 0px; }
+      #Contact .wrapper.sub-section #BaseContact .contact {
+        margin-top: 30px; }
+        #Contact .wrapper.sub-section #BaseContact .contact:first-child {
+          margin-top: 0px; }
+        #Contact .wrapper.sub-section #BaseContact .contact h2 {
+          text-transform: uppercase; }
+        #Contact .wrapper.sub-section #BaseContact .contact a {
+          font-size: 20px;
+          color: #989898; }
+          #Contact .wrapper.sub-section #BaseContact .contact a.email-link {
+            cursor: pointer; }
+    #Contact .wrapper.sub-section #About {
+      padding: 140px 0px 0px 0px;
+      color: #989898; }
+      #Contact .wrapper.sub-section #About p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px; }
+        #Contact .wrapper.sub-section #About p a {
+          color: black; }
+      #Contact .wrapper.sub-section #About .quote {
+        font-size: 19px;
+        margin-left: 355px; }

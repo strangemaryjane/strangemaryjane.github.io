@@ -1,0 +1,146 @@
+@import "reset";
+@import "css3_mixins/css3_mixins";
+@import "colors";
+
+html {
+	//background: transparent url('../../images/TEMPLATE_Portfolio_Feature.png') no-repeat 0px 0px scroll;
+	//background: transparent url('../../images/TEMPLATE_Resume.png') no-repeat 0px 0px scroll;
+	//background: transparent url('../../images/TEMPLATE_Contact.png') no-repeat 0px 0px scroll;
+	//background: transparent url('../../images/TEMPLATE_Contact_About.png') no-repeat 0px 0px scroll;
+
+	width: 100%;
+	height: 100%;
+	
+	body {
+
+		display: table;
+		width: 100%;
+		height: 100%;
+
+		#Mary_Wrapper {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+
+	
+}
+
+
+
+#Mary {
+	//font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Economica', sans-serif;
+	font-size: 22px;
+	line-height: normal;
+	text-align: left;
+	display: block;
+	position: relative;
+	overflow: visible;
+	margin: 0px auto 0px;
+	width: 865px;
+	height: 550px;
+	background: transparentize(white, 0.4);
+
+	.application_title, nav.top_level {
+		position: relative;
+		z-index: 10;
+	}
+
+	.application_title {
+		display: block;
+		$height: 45px;
+		font-style: italic;
+		font-size: 40px;
+		line-height: $height;
+		color: $turquoise;
+		width: 310px;
+		height: $height;
+		cursor: pointer;
+		background: transparent url('../../images/title.png') no-repeat top left scroll;
+		font: 0/0 a;
+	}
+
+	nav.top_level {
+
+		display: block;
+		float: left;
+		width: 0px;
+		height: auto;
+		overflow: visible;
+		margin-top: 42px;
+		margin-left: 2px;
+		color: $dark_grey;
+
+		ul {
+			display: block;
+			float: left;
+			width: 0px;
+			height: auto;
+			overflow: visible;
+
+			li.application_link {
+				display: block;
+				float: left;
+				overflow: visible;
+				width: 0px;
+				height: 50px;
+				clear: both;
+				cursor: pointer;
+
+				font-size: 28px;
+				text-transform: uppercase;
+
+				&.active, &:hover {
+					color: $light_grey;
+				}
+
+				a {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
+
+#BottomLayer {
+	position: absolute;
+	top: 0; left: 0;
+	overflow: visible;
+	height: 100%;
+	width: 100%;
+
+	& > div {
+		height: 100%;
+		width: 100%;
+	}
+
+	div.wrapper {
+		display: block;
+		float: left;
+		height: 100%;
+
+		&.navigation {
+			width: 30%;
+			padding: 245px 10px 10px 40px;
+			//background: transparentize(green, 0.8);
+		}
+		&.contact-links{
+			width: 69%;
+			//background: transparentize(red, 0.8);	
+		}
+
+
+		nav.subnavigation {
+			ul li {
+				text-transform: uppercase;
+				margin-top: 22px;
+				&:first-child { margin-top: 0px; }
+				&.active, &:hover {
+					color: $light_grey;
+				}
+			}
+		}
+	}
+}

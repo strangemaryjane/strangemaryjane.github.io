@@ -1,0 +1,31 @@
+<!-- Project-Feature Level View ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  -->
+<% var feature = features[current_feature]; %>
+<div class="Project">
+	<div class="feature-overview">
+		<div class="stick-to-bottom">
+			<span class="title"><%=feature.title%>:</span>
+			<p class="description"><%=feature.description%></span>
+		</div>
+	</div>
+	<div class="right-side">
+		<h1 class="title"><%=title%></h1>
+
+		<figure class="feature-figure">
+			<img src="<%=feature.image%>" alt="Image of my work." />
+			<figcaption><%=feature.caption%></figcaption>
+		</figure>
+
+		<nav class="features-nav">
+			<ul class="list-of-features">
+				<% _.each(features, function (feature, i) { %>
+					<li class="feature" 
+						data-idx="<%=i%>" 
+						style="background-image: url('<%=feature.image%>');">
+						<a href="#/Portfolio/<%= title.replace(/ /g, '-') %>/<%= feature.title.replace(/ /g, '-') %>"></a>
+					</li>
+				<% }) %>
+			</ul>
+		</nav>
+
+	</div>
+</div>

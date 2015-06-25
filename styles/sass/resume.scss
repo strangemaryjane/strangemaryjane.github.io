@@ -1,0 +1,42 @@
+@import "css3_mixins/css3_mixins";
+@import "colors";
+
+#Resume {
+	display: block;
+	height: 100%;
+	width: 100%;
+
+	& > section > article {
+		.title { 
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 16px;
+			margin-bottom: 2px;
+		}
+		.content {
+			font-size: 14px;
+			line-height: 20px;
+			color: $light_grey;
+		}
+	}
+
+	.center {
+		width: 45%;
+		height: 100%;
+		display: block;
+		float: left;
+		padding: 180px 10px 10px 170px;
+
+		.education { }
+	}
+
+	.right {
+		width: 25%;
+		height: 100%;
+		display: block;
+		float: left;
+		padding: 105px 10px 10px 15px;
+
+		.past-experience { }
+	}
+}

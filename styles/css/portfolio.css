@@ -1,0 +1,150 @@
+#Portfolio {
+  height: 100%;
+  width: 100%; }
+  #Portfolio ul.list-of-projects {
+    position: absolute;
+    display: block;
+    overflow: visible;
+    width: 300px;
+    /* <= The width of 3 blocks. */
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate(345px, 80px);
+    -moz-transform: translate(345px, 80px);
+    -ms-transform: translate(345px, 80px);
+    -o-transform: translate(345px, 80px);
+    transform: translate(345px, 80px); }
+    #Portfolio ul.list-of-projects.down-below {
+      width: auto;
+      text-align: center;
+      margin: 0 auto;
+      -webkit-transform: translate(240px, 475px);
+      -moz-transform: translate(240px, 475px);
+      -ms-transform: translate(240px, 475px);
+      -o-transform: translate(240px, 475px);
+      transform: translate(240px, 475px); }
+      #Portfolio ul.list-of-projects.down-below li.project {
+        display: block;
+        margin: 10px;
+        width: 50px;
+        height: 50px; }
+        #Portfolio ul.list-of-projects.down-below li.project.col_2 {
+          -webkit-transform: translate(0px, 0px);
+          -moz-transform: translate(0px, 0px);
+          -ms-transform: translate(0px, 0px);
+          -o-transform: translate(0px, 0px);
+          transform: translate(0px, 0px); }
+        #Portfolio ul.list-of-projects.down-below li.project.col_3 {
+          -webkit-transform: translate(0px, 0px);
+          -moz-transform: translate(0px, 0px);
+          -ms-transform: translate(0px, 0px);
+          -o-transform: translate(0px, 0px);
+          transform: translate(0px, 0px); }
+    #Portfolio ul.list-of-projects li.project {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: left;
+      margin: 70px 0px 0px 0px;
+      background-color: rgba(63, 246, 209, 0.1);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      width: 100px;
+      height: 100px; }
+      #Portfolio ul.list-of-projects li.project a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+      #Portfolio ul.list-of-projects li.project.col_2 {
+        -webkit-transform: translate(110px, 0px);
+        -moz-transform: translate(110px, 0px);
+        -ms-transform: translate(110px, 0px);
+        -o-transform: translate(110px, 0px);
+        transform: translate(110px, 0px); }
+      #Portfolio ul.list-of-projects li.project.col_3 {
+        -webkit-transform: translate(210px, 0px);
+        -moz-transform: translate(210px, 0px);
+        -ms-transform: translate(210px, 0px);
+        -o-transform: translate(210px, 0px);
+        transform: translate(210px, 0px); }
+      #Portfolio ul.list-of-projects li.project.active {
+        top: 2px;
+        box-shadow: 0px 0px 15px -1px #777; }
+  #Portfolio #Project_Wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    #Portfolio #Project_Wrapper .Project {
+      width: 100%;
+      height: 100%; }
+      #Portfolio #Project_Wrapper .Project .feature-overview {
+        position: relative;
+        display: block;
+        float: left;
+        height: 440px;
+        width: 350px; }
+        #Portfolio #Project_Wrapper .Project .feature-overview .stick-to-bottom {
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          width: 310px;
+          padding: 0px 75px 0px 0px;
+          text-align: left;
+          font-size: 16px; }
+          #Portfolio #Project_Wrapper .Project .feature-overview .stick-to-bottom .title {
+            color: #434343;
+            line-height: 30px; }
+          #Portfolio #Project_Wrapper .Project .feature-overview .stick-to-bottom .description {
+            color: #989898; }
+      #Portfolio #Project_Wrapper .Project .right-side .title {
+        display: block;
+        float: left;
+        margin: 70px 0px 0px 0px;
+        width: 100%;
+        text-transform: uppercase; }
+      #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure {
+        display: block;
+        float: left;
+        margin: 20px 0px 0px 0px;
+        width: 447px; }
+        #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure img, #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure .img {
+          max-width: 100%;
+          max-height: 340px;
+          display: block;
+          clear: both; }
+        #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure figcaption {
+          display: block;
+          font-size: 14px;
+          line-height: normal;
+          margin-top: 10px;
+          color: #989898; }
+      #Portfolio #Project_Wrapper .Project .right-side .features-nav {
+        display: block;
+        overflow: hidden;
+        float: left;
+        width: 68px; }
+        #Portfolio #Project_Wrapper .Project .right-side .features-nav .list-of-features {
+          overflow: auto;
+          width: 100%;
+          float: right;
+          margin-top: 16px; }
+          #Portfolio #Project_Wrapper .Project .right-side .features-nav .list-of-features .feature {
+            display: block;
+            width: 60px;
+            height: 50px;
+            overflow: hidden;
+            float: left;
+            background: black;
+            margin: 4px;
+            background-color: transparent;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer; }
+            #Portfolio #Project_Wrapper .Project .right-side .features-nav .list-of-features .feature a {
+              background-color: inherit;
+              display: block;
+              width: 100%;
+              height: 100%; }

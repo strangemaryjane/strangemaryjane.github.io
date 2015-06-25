@@ -1,0 +1,52 @@
+@import "css3_mixins/css3_mixins";
+@import "colors";
+
+#Contact {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	.wrapper.sub-section { 
+		max-width: 70%;
+		padding: 0px 0px 0px 34px;
+
+		#BaseContact {
+			padding: 245px 10px 10px 0px;
+			.contact {
+				margin-top: 30px;
+				&:first-child { 
+					margin-top: 0px; 
+				}
+
+				h2 { 
+					text-transform: uppercase; 
+				}
+				a { 
+					font-size: 20px; 
+					color: $light_grey;
+					&.email-link {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		#About {
+			padding: 140px 0px 0px 0px;
+			color: $light_grey;
+
+			p { 
+				font-size: 14px;
+				line-height: 18px;
+				margin-bottom: 20px;
+				a {
+					color: black;
+				}
+			}
+			.quote {
+				font-size: 19px;
+				margin-left: 355px;
+			}
+		}
+	}
+}

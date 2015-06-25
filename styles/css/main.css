@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none;
+  outline: none; }
+
+/* box-sizing reset.  Make padding make sense! */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%; }
+  html body {
+    display: table;
+    width: 100%;
+    height: 100%; }
+    html body #Mary_Wrapper {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+
+#Mary {
+  font-family: 'Economica', sans-serif;
+  font-size: 22px;
+  line-height: normal;
+  text-align: left;
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin: 0px auto 0px;
+  width: 865px;
+  height: 550px;
+  background: rgba(255, 255, 255, 0.6); }
+  #Mary .application_title, #Mary nav.top_level {
+    position: relative;
+    z-index: 10; }
+  #Mary .application_title {
+    display: block;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 45px;
+    color: #3ff6d1;
+    width: 310px;
+    height: 45px;
+    cursor: pointer;
+    background: transparent url("../../images/title.png") no-repeat top left scroll;
+    font: 0/0 a; }
+  #Mary nav.top_level {
+    display: block;
+    float: left;
+    width: 0px;
+    height: auto;
+    overflow: visible;
+    margin-top: 42px;
+    margin-left: 2px;
+    color: #434343; }
+    #Mary nav.top_level ul {
+      display: block;
+      float: left;
+      width: 0px;
+      height: auto;
+      overflow: visible; }
+      #Mary nav.top_level ul li.application_link {
+        display: block;
+        float: left;
+        overflow: visible;
+        width: 0px;
+        height: 50px;
+        clear: both;
+        cursor: pointer;
+        font-size: 28px;
+        text-transform: uppercase; }
+        #Mary nav.top_level ul li.application_link.active, #Mary nav.top_level ul li.application_link:hover {
+          color: #989898; }
+        #Mary nav.top_level ul li.application_link a {
+          vertical-align: middle; }
+
+#BottomLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  height: 100%;
+  width: 100%; }
+  #BottomLayer > div {
+    height: 100%;
+    width: 100%; }
+  #BottomLayer div.wrapper {
+    display: block;
+    float: left;
+    height: 100%; }
+    #BottomLayer div.wrapper.navigation {
+      width: 30%;
+      padding: 245px 10px 10px 40px; }
+    #BottomLayer div.wrapper.contact-links {
+      width: 69%; }
+    #BottomLayer div.wrapper nav.subnavigation ul li {
+      text-transform: uppercase;
+      margin-top: 22px; }
+      #BottomLayer div.wrapper nav.subnavigation ul li:first-child {
+        margin-top: 0px; }
+      #BottomLayer div.wrapper nav.subnavigation ul li.active, #BottomLayer div.wrapper nav.subnavigation ul li:hover {
+        color: #989898; }
+#Contact {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  #Contact .wrapper.sub-section {
+    max-width: 70%;
+    padding: 0px 0px 0px 34px; }
+    #Contact .wrapper.sub-section #BaseContact {
+      padding: 245px 10px 10px 0px; }
+      #Contact .wrapper.sub-section #BaseContact .contact {
+        margin-top: 30px; }
+        #Contact .wrapper.sub-section #BaseContact .contact:first-child {
+          margin-top: 0px; }
+        #Contact .wrapper.sub-section #BaseContact .contact h2 {
+          text-transform: uppercase; }
+        #Contact .wrapper.sub-section #BaseContact .contact a {
+          font-size: 20px;
+          color: #989898; }
+          #Contact .wrapper.sub-section #BaseContact .contact a.email-link {
+            cursor: pointer; }
+    #Contact .wrapper.sub-section #About {
+      padding: 140px 0px 0px 0px;
+      color: #989898; }
+      #Contact .wrapper.sub-section #About p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px; }
+        #Contact .wrapper.sub-section #About p a {
+          color: black; }
+      #Contact .wrapper.sub-section #About .quote {
+        font-size: 19px;
+        margin-left: 355px; }
+#Portfolio {
+  height: 100%;
+  width: 100%; }
+  #Portfolio ul.list-of-projects {
+    position: absolute;
+    display: block;
+    overflow: visible;
+    width: 300px;
+    /* <= The width of 3 blocks. */
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate(345px, 80px);
+    -moz-transform: translate(345px, 80px);
+    -ms-transform: translate(345px, 80px);
+    -o-transform: translate(345px, 80px);
+    transform: translate(345px, 80px); }
+    #Portfolio ul.list-of-projects.down-below {
+      width: auto;
+      text-align: center;
+      margin: 0 auto;
+      -webkit-transform: translate(240px, 475px);
+      -moz-transform: translate(240px, 475px);
+      -ms-transform: translate(240px, 475px);
+      -o-transform: translate(240px, 475px);
+      transform: translate(240px, 475px); }
+      #Portfolio ul.list-of-projects.down-below li.project {
+        display: block;
+        margin: 10px;
+        width: 50px;
+        height: 50px; }
+        #Portfolio ul.list-of-projects.down-below li.project.col_2 {
+          -webkit-transform: translate(0px, 0px);
+          -moz-transform: translate(0px, 0px);
+          -ms-transform: translate(0px, 0px);
+          -o-transform: translate(0px, 0px);
+          transform: translate(0px, 0px); }
+        #Portfolio ul.list-of-projects.down-below li.project.col_3 {
+          -webkit-transform: translate(0px, 0px);
+          -moz-transform: translate(0px, 0px);
+          -ms-transform: translate(0px, 0px);
+          -o-transform: translate(0px, 0px);
+          transform: translate(0px, 0px); }
+    #Portfolio ul.list-of-projects li.project {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: left;
+      margin: 70px 0px 0px 0px;
+      background-color: rgba(63, 246, 209, 0.1);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      width: 100px;
+      height: 100px; }
+      #Portfolio ul.list-of-projects li.project a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+      #Portfolio ul.list-of-projects li.project.col_2 {
+        -webkit-transform: translate(110px, 0px);
+        -moz-transform: translate(110px, 0px);
+        -ms-transform: translate(110px, 0px);
+        -o-transform: translate(110px, 0px);
+        transform: translate(110px, 0px); }
+      #Portfolio ul.list-of-projects li.project.col_3 {
+        -webkit-transform: translate(210px, 0px);
+        -moz-transform: translate(210px, 0px);
+        -ms-transform: translate(210px, 0px);
+        -o-transform: translate(210px, 0px);
+        transform: translate(210px, 0px); }
+      #Portfolio ul.list-of-projects li.project.active {
+        top: 2px;
+        box-shadow: 0px 0px 15px -1px #777; }
+  #Portfolio #Project_Wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    #Portfolio #Project_Wrapper .Project {
+      width: 100%;
+      height: 100%; }
+      #Portfolio #Project_Wrapper .Project .feature-overview {
+        position: relative;
+        display: block;
+        float: left;
+        height: 440px;
+        width: 350px; }
+        #Portfolio #Project_Wrapper .Project .feature-overview .stick-to-bottom {
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          width: 310px;
+          padding: 0px 75px 0px 0px;
+          text-align: left;
+          font-size: 16px; }
+          #Portfolio #Project_Wrapper .Project .feature-overview .stick-to-bottom .title {
+            color: #434343;
+            line-height: 30px; }
+          #Portfolio #Project_Wrapper .Project .feature-overview .stick-to-bottom .description {
+            color: #989898; }
+      #Portfolio #Project_Wrapper .Project .right-side .title {
+        display: block;
+        float: left;
+        margin: 70px 0px 0px 0px;
+        width: 100%;
+        text-transform: uppercase; }
+      #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure {
+        display: block;
+        float: left;
+        margin: 20px 0px 0px 0px;
+        width: 447px; }
+        #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure img, #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure .img {
+          max-width: 100%;
+          max-height: 340px;
+          display: block;
+          clear: both; }
+        #Portfolio #Project_Wrapper .Project .right-side figure.feature-figure figcaption {
+          display: block;
+          font-size: 14px;
+          line-height: normal;
+          margin-top: 10px;
+          color: #989898; }
+      #Portfolio #Project_Wrapper .Project .right-side .features-nav {
+        display: block;
+        overflow: hidden;
+        float: left;
+        width: 68px; }
+        #Portfolio #Project_Wrapper .Project .right-side .features-nav .list-of-features {
+          overflow: auto;
+          width: 100%;
+          float: right;
+          margin-top: 16px; }
+          #Portfolio #Project_Wrapper .Project .right-side .features-nav .list-of-features .feature {
+            display: block;
+            width: 60px;
+            height: 50px;
+            overflow: hidden;
+            float: left;
+            background: black;
+            margin: 4px;
+            background-color: transparent;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer; }
+            #Portfolio #Project_Wrapper .Project .right-side .features-nav .list-of-features .feature a {
+              background-color: inherit;
+              display: block;
+              width: 100%;
+              height: 100%; }
+#Resume {
+  display: block;
+  height: 100%;
+  width: 100%; }
+  #Resume > section > article .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px; }
+  #Resume > section > article .content {
+    font-size: 14px;
+    line-height: 20px;
+    color: #989898; }
+  #Resume .center {
+    width: 45%;
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 180px 10px 10px 170px; }
+  #Resume .right {
+    width: 25%;
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 105px 10px 10px 15px; }
